@@ -1,8 +1,8 @@
 <!-- .slide: id="lesson8" -->
 
-# JavaScript Course - Spring 2026
+# JavaScript Course - Fall 2025
 
-Lesson 8, Tuesday, 2026-04-14
+Lesson 8, Thursday, 2025-10-09
 
 ---
 
@@ -16,7 +16,7 @@ The player has to guess that number, but the computer can only
 tell wether they guessed too low, too high or
 whether they guessed the right number.
 
-Link: https://raw.githubusercontent.com/ReDI-School/js-2026-spring/refs/heads/main/project/number-guess-game.html
+Link: https://raw.githubusercontent.com/ReDI-School/js-2025-fall/refs/heads/main/project/number-guess-game.html
 
 ---
 
@@ -27,7 +27,7 @@ You're running a business selling 2 products.
 The user can enter how many of each products they want to order,
 and your job is to tell the user how much they need to pay.
 
-Link: https://raw.githubusercontent.com/ReDI-School/js-2026-spring/refs/heads/main/project/webshop.html
+Link: https://raw.githubusercontent.com/ReDI-School/js-2025-fall/refs/heads/main/project/webshop.html
 
 ---
 
@@ -37,4 +37,4 @@ You're managing an employee information portal.
 
 The user can view employee details, including phone numbers and addresses.
 
-Link: https://raw.githubusercontent.com/ReDI-School/js-2026-spring/refs/heads/main/project/employee-portal.html
+Link: https://raw.githubusercontent.com/ReDI-School/js-2025-fall/refs/heads/main/project/employee-portal.html

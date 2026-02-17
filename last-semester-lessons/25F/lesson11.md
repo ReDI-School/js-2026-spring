@@ -1,8 +1,8 @@
 <!-- .slide: id="lesson11" -->
 
-# JavaScript Course - Spring 2026
+# JavaScript Course - Fall 2025
 
-Lesson 11, Thursday, 2026-04-23
+Lesson 10, Tuesday, 2025-10-23
 
 ---
 

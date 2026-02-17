@@ -1,8 +1,8 @@
 <!-- .slide: id="lesson15" -->
 
-# JavaScript Course - Spring 2026
+# JavaScript Course - Fall 2025
 
-Lesson 15, Thursday, 2026-05-07
+Lesson 15, Tuesday, 2025-11-18
 
 ---
 
@@ -145,7 +145,7 @@ Additional Resources:
 
 - Individual or team of 2-3 people
   - Fill out the info in the spreadsheet!
-- Internal presentation date TBD, you will present your project to the class
+- Internal presentation at Dec 9th, you will present your project to the class
 - Some projects at Demo Day (different by location)
   - Nominate yourself
 

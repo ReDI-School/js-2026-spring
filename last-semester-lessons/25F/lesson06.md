@@ -1,8 +1,8 @@
 <!-- .slide: id="lesson6" -->
 
-# JavaScript Course - Spring 2026
+# JavaScript Course - Fall 2025
 
-Lesson 6, Tuesday, 2026-04-07
+Lesson 6, Thursday, 2025-10-02
 
 ---
 
@@ -171,7 +171,7 @@ Write to console how many times you won, lost, and tied.
 
 ---
 
-Download or copy paste the [functions exercise](https://raw.githubusercontent.com/ReDI-School/js-2026-spring/main/functions/index.html). Open it in your browser and VSCode, then implement the three functions in the first script tag until the unit test passes.
+Download or copy paste the [functions exercise](https://raw.githubusercontent.com/ReDI-School/js-berlin-2024-fall/main/functions/index.html). Open it in your browser and VSCode, then implement the three functions in the first script tag until the unit test passes.
 
 ---
 

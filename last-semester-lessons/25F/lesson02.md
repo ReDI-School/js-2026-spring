@@ -1,8 +1,8 @@
 <!-- .slide: id="   " -->
 
-### JavaScript Course - Spring 2026
+### JavaScript Course - Fall 2025
 
-Lesson 2, Tuesday, 2026-03-24
+Lesson 2, Thursday, 2025-09-18
 
 ---
 
