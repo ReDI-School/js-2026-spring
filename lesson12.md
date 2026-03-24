@@ -2,7 +2,7 @@
 
 # JavaScript Course - Spring 2026
 
-Lesson 12, Tuesday, 2026-04-28
+Lesson 12, Thursday, 2026-04-30
 
 ---
 

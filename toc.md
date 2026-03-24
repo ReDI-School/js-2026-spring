@@ -7,7 +7,7 @@
 7. [Objects](#lesson7)
 8. [DOM](#lesson9)
 9. [Loops](#lesson12)
-10. [fetch](#lessson13)
+10. [fetch](#lesson13)
 11. [Final Project](#final)
 
 Direct link to lessons: [1](#lesson1) [2](#lesson2) [3](#lesson3) [4](#lesson4) [5](#lesson5) [6](#lesson6) [7](#lesson7) [8](#lesson8) [9](#lesson9) [10](#lesson10) [11](#lesson11) [12](#lesson12) [13](#lesson13) [14](#lesson14) [15](#lesson15)

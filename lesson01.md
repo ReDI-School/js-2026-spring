@@ -1,8 +1,8 @@
-<!-- .slide: id="²" -->
+<!-- .slide: id="lesson1" -->
 
 ### JavaScript Course - Spring 2026
 
-Lesson 1, Thursday, 2026-03-19
+Lesson 1, Tuesday, 2026-03-24
 
 ---
 
