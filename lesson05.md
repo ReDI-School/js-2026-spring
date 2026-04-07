@@ -6,8 +6,6 @@ Lesson 5, Tuesday, 2026-04-07
 
 ---
 
----
-
 ### Recap: Data types
 
 Which data types have we seen so far?
