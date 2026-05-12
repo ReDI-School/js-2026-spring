@@ -9,15 +9,15 @@ Lesson 13, Tuesday, 2026-05-12
 # Build a TODO List
 
 
-> Today we will work in breakout rooms to build a TODO list app, as a small prep for the final project.
-
-
 Put together what you've learned about **arrays**, **loops**, and the **DOM** to build a small TODO list app that runs in the browser.
 
+> We will work in breakout rooms as preparation for the final project.
 
 ---
 
-I will provide you with a list of features, see how far can you get today. No pressure to finish all of them. This is NOT the size / scope of the final project, but just to get you inspired and to practice the skills you've learned so far.
+I will provide you with a list of features, see how far can you get today. No pressure to finish all of them.
+
+This is NOT the size / scope of the final project, but just to get you inspired and to practice the skills you've learned so far.
 
 ---
 
