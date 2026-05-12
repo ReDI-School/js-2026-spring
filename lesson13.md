@@ -33,7 +33,6 @@ This is NOT the size / scope of the final project, but just to get you inspired 
 - Add a "Delete" button next to each task that removes it from the list
 - Add a "Done" checkbox that visually strikes the task through
 - Pressing Enter in the input field adds the task
-- Tasks survive a page reload
 - Show a counter, e.g. "3 tasks, 1 done"
 
 ---
@@ -49,3 +48,4 @@ This is NOT the size / scope of the final project, but just to get you inspired 
 - Search box that filters the visible tasks as you type
 - Reorder with up/down arrows next to each task
 - Priority levels (low / medium / high) with a colored indicator
+- Tasks survive a page reload
