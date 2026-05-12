@@ -6,10 +6,10 @@ Lesson 13, Tuesday, 2026-05-12
 
 ---
 
-# Build a TODO List
+# TODO List
 
 
-Put together what you've learned about **arrays**, **loops**, and the **DOM** to build a small TODO list app that runs in the browser.
+Put together what you've learned about arrays, loops, and the DOM to build a small TODO list app.
 
 > We will work in breakout rooms as preparation for the final project.
 
