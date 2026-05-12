@@ -6,197 +6,203 @@ Lesson 15, Tuesday, 2026-05-26
 
 ---
 
-> this is a new lesson format we are experimenting with this semester, feedback welcome!
+### Lesson overview
+
+- Recap
+- Libraries
+- Libraries + fetch examples and tasks
 
 ---
 
-# Peer Review
+### Recap
 
-One or more people examine the work of someone else. Usually happens in teams before considering the code to be ready.
-
----
-
-### Why peer review?
-
-- Helps catch bugs early on
-- Improves code quality, reliability, and maintainability
-- Enhances learning through feedback
-- Promotes team collaboration and communication
+- JSON is a string representation of a JavaScript object
+- It stands for **J**ava**S**cript **O**bject **N**otation
+- JSON can be easily transferred (and stored)
 
 ---
 
-### How to do it right
+### Recap
 
-- Review code for clarity, not just bugs
-- Suggest improvements, don’t just criticize
-- Ask questions if unclear about logic
-
----
-
-Give your feedback on this code:
+**async** and **await** keywords in JavaScript provide a modern syntax to help us handle asynchronous operations.
 
 ```js
-let n = 3;
-let p = 8;
-console.log(n * p);
-```
-
-Variable names could be better
-
-<!-- .element: class="fragment" -->
-
----
-
-Give your feedback on this code:
-
-```js
-let numFriends = 2;
-let ticketPrice = 2;
-let totalPrice = numFriends ** ticketPrice;
-console.log(totalPrice); // output is 4
-```
-
-There is a bug, it should be `*`, not `**`
-
-<!-- .element: class="fragment" -->
-
----
-
-Give your feedback on this code:
-
-```js
-function isUserActive(user) {
-  if (user.isDeleted === true) {
-    return false;
-  } else {
-    return true;
-  }
+async function fetchDataFromApi() {
+  let res = await fetch("https://v2.jokeapi.dev/joke/Programming?type=single");
+  let json = await res.json();
+  console.log(json.joke);
 }
-
-let userActive = isUserActive(user);
 ```
 
-It can be simpler: `let userActive = !user.isDeleted`
+---
 
-<!-- .element: class="fragment" -->
+<!-- .slide: id="libraries" -->
+
+# Libraries
 
 ---
 
-### Self-Review
+What is a library?
 
-before peer review, always look at your code with a critical eye before considering it ready, it saves time for others, and it helps make the code easier to understand.
-
----
-
-Ask yourself the following questions:
-
-- Would my teammates understand this?
-- Would I understand this if I came back to it in 6 months?
-- Does this do what it is supposed to do? Does it actually do what i think it does?
+- General definition: A collection of resources used for software development
+- More specifically, libraries usually relate to one specific type of functionality that you require for your app to function that (usually) someone else has written.
+- Examples: chart.js, d3.js, Plotly, Leaflet, ....
 
 ---
 
-Some good habits:
+### Loading a library
 
-- Take a break before reviewing
-- Git diffs / Pull requests
-- Rubber ducking
+Up until now, this was our standard pattern:
 
----
-
-### AI Tools
-
-You can use AI tools to help you do the review, but you need to _ask the right questions_, and _think critically about the output._
-
-
----
-
-### Demo with ChatGPT
+```html
+<html>
+  <body>
+    Hello from HTML!
+    <script>
+      console.log("Hello from JavaScript!");
+    </script>
+  </body>
+</html>
+```
 
 ---
 
-Now try it with some of your code from previous tasks
+Javascript can also be loaded from a file inside the same directory as the HTML file:
 
-* What did it say? Does it make sense?
-* Do you know if its better? why?
-* Can you change adapt your code accordingly?
+```html
+<html>
+  <body>
+    <script src="main.js"></script>
+  </body>
+</html>
+```
 
----
-
-Additional Resources:
-
-* [Why you need a self review of your code](https://medium.com/bitdatatechie/why-you-need-a-self-review-of-your-code-4ea057f428fa)
-* [How to review code effectively: A GitHub staff engineer’s philosophy](https://github.blog/developer-skills/github/how-to-review-code-effectively-a-github-staff-engineers-philosophy/)
-* [How to do a code review](https://google.github.io/eng-practices/review/reviewer/)
-* [Code Review good practices: guide for beginners](https://medium.com/transparent-data-eng/good-practices-of-code-review-guide-for-beginners-8c084cd70be3)
-* [Review your own pull requests](https://patrickdinh.medium.com/review-your-own-pull-requests-5634cad10b7a)
-* [Empathy and code reviews](https://medium.com/@RoxSWEngineering/empathy-and-code-reviews-fde4e394184d)
+You can now write all your JavaScript in `main.js`.
 
 ---
 
-<!-- .slide: id="final" -->
+### Multiple scripts
 
+We can add as many scripts as we want:
 
-# Final Project!
+```html
+<html>
+  <body>
+    <script src="utilities.js"></script>
+    <script src="recipes.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+```
 
----
-
-### Organizational info
-
-- Individual or team of 2-3 people
-  - Fill out the info in the spreadsheet!
-- Internal presentation date TBD, you will present your project to the class
-- Some projects at Demo Day (different by location)
-  - Nominate yourself
-
----
-
-### Last semesters
-
-- [WhattaCook](https://github.com/katamatata/katamatata.github.io)
-- [Plantastik](https://github.com/annamariaratajczak/plantastick)
-- [Giphy CopyCat](https://github.com/ami-onodera/giphy)
-- [Memory Game](https://github.com/TainaraCris1/Project_Memory_Game)
-- [Tic-Tac-Toe](https://github.com/Amani-Maklad/Tic-Tac-Toe)
+This allows us to split long scripts into pieces
 
 ---
 
-### More ideas
+### Multiple scripts
 
-- Data visualization of the flee markets in Berlin
-- Calendar for Remote work
-- Grocery shopping list
-- AI in the browser
-- Personal Portfolio
+- If we have multiple script tags, we can use all global variables and global functions from all scripts that are added _before_ our script.
+- Scripts are run in order!
+- In the example on the last slide, `recipes.js` can use all globals from `utilities.js`, and `main.js` can use all globals from `recipes.js` and `utilities.js`
 
 ---
 
-### APIs
+### Scripts in header vs. body
 
-- [Berlin data](https://daten.berlin.de/datensaetze/datenberlinde-metadaten)
-- [Free APIS](https://free-apis.github.io/#/browse)
-- [Public APIs](https://github.com/public-apis/public-apis)
+<!-- .slide: style="font-size:80%" -->
+
+We put our _own_ scripts at the bottom of the `<body>` tag. This allows us to access all HTML elements via DOM API
+
+We can put scripts also in the `<head>` tag. These are loaded _before_ the page is rendered:
+
+```html
+<html>
+  <head>
+    <script src="utilities.js"></script>
+  </head>
+  <body>
+    <div id="myDiv">
+      <!-- Elements go here -->
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+```
 
 ---
 
-### AI in the browser
+### Remote scripts
 
-Latest Chrome beta can run small AI models in the browser!
+Scripts can also be remote addresses. In the example below, we load the `plotly.js` library:
+
+```html
+<html>
+  <head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+</html>
+```
+
+---
+
+### Library example: Plotly
+
+- Plotly is a graphing library
+- When we load `plotly-latest-min.js`, we have access to a single global object called `Plotly`
+- Documentation: https://plotly.com/javascript/getting-started/
+
+---
+
+### Plotly usage example
+
+```html
+<html>
+  <head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <div id="myGraph"></div>
+    <script>
+      let dataSet1 = {
+        x: [1, 2, 3, 4],
+        y: [0, 12, 8, 17],
+        type: "scatter",
+      };
+      Plotly.newPlot("myGraph", [dataSet1]);
+    </script>
+  </body>
+</html>
+```
+
+---
+
+### Task 1
+
+Here is an array of the temperature data for Berlin for 15th of November, 2024. Can you plot them using Plotly?
 
 ```js
-let model = await LanguageModel.create();
-let answer = await model.prompt("Why is JavaScript awesome?");
-// or detect language
-let detector = await LanguageDetector.create();
-let result = await detector.detect("Merci common ca va?");
+let temperatures = [
+  9.9, 9.7, 9.6, 9.5, 9.6, 8.9, 7.9, 7.2, 7.5, 7.8, 7.9, 8.1, 8.6, 8.6, 8.8,
+  8.4, 7.4, 6.5, 6.1, 6.0, 6.2, 6.3, 6.3,
+];
 ```
-
-Documentation: https://developer.chrome.com/docs/ai/built-in
 
 ---
 
-### Project Strategy
+### Bonus - Task 2
 
-Define a Minimum Viable Product (MVP)
+Create a new graph of the forecast of the new hourly temperature in Berlin for the next 3 days.
 
-Implement essential functionality, and if there's still time, implement the "nice to have" features.
+you can fetch the data by using the following URL
+
+```
+https://api.open-meteo.com/v1/forecast?latitude=52.50&longitude=13.48&hourly=temperature_2m&forecast_days=3
+```
+
+more information about the API: https://open-meteo.com/en/docs
+
+---
+
+### Bonus
+
+Let the user choose the number of days to be shown in the graph.
