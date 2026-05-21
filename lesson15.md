@@ -138,7 +138,7 @@ Scripts can also be remote addresses. In the example below, we load the `plotly.
 ```html
 <html>
   <head>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-3.5.1.min.js"></script>
   </head>
 </html>
 ```
@@ -148,7 +148,7 @@ Scripts can also be remote addresses. In the example below, we load the `plotly.
 ### Library example: Plotly
 
 - Plotly is a graphing library
-- When we load `plotly-latest-min.js`, we have access to a single global object called `Plotly`
+- When we load `plotly-3.5.1.min.js`, we have access to a single global object called `Plotly`
 - Documentation: https://plotly.com/javascript/getting-started/
 
 ---
