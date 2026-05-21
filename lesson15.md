@@ -158,7 +158,7 @@ Scripts can also be remote addresses. In the example below, we load the `plotly.
 ```html
 <html>
   <head>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-3.5.1.min.js"></script>
   </head>
   <body>
     <div id="myGraph"></div>
